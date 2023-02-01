@@ -610,7 +610,12 @@ humann_associate --input ./Outputs/06_humann_renorm/sex_pathabund.pcl \
 --output ./my_results/20_sex_path_stats.txt \
 --fdr 1
 ```
+- 위 명령어 실행 후, ``humann_associate: command not found`` 로 에러가 날 수도 있습니다.
+- 이는 humann_associate 모듈이 설치가 안된 것인데, Mac (intel) 에서는 문제없이 설치되나, Linux (Window에서 WSL) 또는 Mac (M1 chip)에서 설치가 안될 수 있는 것 같습니다.
+- HUMAnN에서의 association분석은 DEMO 용이라고 HUMAnN 팀에서도 위 언급한 association 전용툴을 추천하고 있으니, 이 명령어에 에러가 나신 분들은, 실행은 스킵하고, ``./Outputs/06_humann_renorm/sex_path_stats.txt`` 이 결과파일만 어떻게 생겼는지 참고하시기 바랍니다.
+
 <br>
+
 
 ### - HUMAnN bar plot 그리기
 ```sh
